@@ -1,0 +1,9 @@
+giải thuật của hàm `find_minimum_suffix`:
+
+1. Nhận danh sách `arr` làm đầu vào.
+2. Tìm phần tử có giá trị nhỏ nhất trong danh sách `arr` dựa trên phần tử từ vị trí thứ hai trở đi.
+3. Để thực hiện bước trên, sử dụng hàm `min` với tham số `key=lambda x: int(x[1:])`.
+   - Hàm `lambda x: int(x[1:])` được sử dụng để chuyển đổi các phần tử trong danh sách thành các giá trị số nguyên từ vị trí thứ hai trở đi.
+   - `min` sẽ tìm phần tử có giá trị nhỏ nhất dựa trên các giá trị số nguyên đã chuyển đổi.
+4. Trả về phần tử có giá trị nhỏ nhất.
+5. Kết thúc hàm.

@@ -1,0 +1,22 @@
+ giải thuật của hàm `update_group_list_PS`:
+
+1. Nhận danh sách `A` và `B` làm đầu vào.
+2. Sao chép giá trị của `A` vào biến `A_copy`.
+3. Gán diff = [].
+4. Gán sách A = [].
+5. Thực hiện vòng lặp `for` từ `i` bằng 0 đến độ dài của danh sách `B` trừ 1.
+6. Trong vòng lặp, kiểm tra điều kiện: nếu tất cả các phần tử trong danh sách con `B[i]` đều giống nhau (bằng phần tử đầu tiên của danh sách con).
+7. Nếu điều kiện trên đúng, thêm danh sách con `A_copy[i]` vào danh sách `A`.
+8. Nếu điều kiện trên sai, thực hiện các bước sau:
+   - Gán giá trị đầu tiên của danh sách con `B[i]` vào biến `temp`.
+   - Sao chép giá trị của danh sách con `A_copy[i]` vào biến `temp_copy`.
+   - Thực hiện vòng lặp `for` từ `j` bằng 0 đến độ dài của danh sách con `B[i]` trừ 1.
+   - Trong vòng lặp, kiểm tra điều kiện: nếu phần tử `B[i][j]` khác `temp`.
+   - Nếu điều kiện trên đúng, thêm phần tử `A_copy[i][j]` vào danh sách `diff[i]`.
+   - Xóa phần tử `A_copy[i][j]` khỏi danh sách `temp_copy`.
+   - Thêm danh sách `temp_copy` vào danh sách `A`.
+9. Lọc danh sách `diff` để loại bỏ các danh sách con rỗng.
+10. Thực hiện vòng lặp `for` từ `i` bằng 0 đến độ dài của danh sách `diff` trừ 1.
+11. Trong vòng lặp, thêm danh sách con `diff[i]` vào danh sách `A`.
+12. Trả về danh sách `A`.
+13. Kết thúc hàm.

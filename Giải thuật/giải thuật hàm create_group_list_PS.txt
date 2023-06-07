@@ -1,0 +1,18 @@
+Đầu vào: A, B, C
+Đầu ra: A
+
+---- Bước thực hiện ----
+1. Gán A = [] (Khởi tạo danh sách kết quả)
+2. Vòng lặp for i trong khoảng từ 0 đến 3:
+     - Kiểm tra điều kiện: nếu i = 0 hoặc i = 1:
+         - Gán binary_array = [int(bit) for bit in format(i, '02b')]
+     - Ngược lại:
+         - Gán binary_array = [int(bit) for bit in bin(i)[2:]]
+     - Thêm danh sách con rỗng vào A
+     - Vòng lặp for j trong khoảng từ 0 đến độ dài của B:
+         - Kiểm tra điều kiện: nếu binary_array bằng B[j]:
+             - Thêm phần tử C[j] vào danh sách con của A[i]
+         - Ngược lại, tiếp tục vòng lặp
+3. Lọc các danh sách con rỗng ra khỏi A bằng cách sử dụng hàm filter và lambda
+4. Gán A = danh sách kết quả sau khi lọc
+5. Trả về A là kết quả cuối cùng

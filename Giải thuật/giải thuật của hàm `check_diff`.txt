@@ -1,0 +1,10 @@
+giải thuật của hàm `check_diff`:
+
+1. Nhận danh sách `A` làm đầu vào.
+2. Khởi tạo biến `i` bằng 0.
+3. Thực hiện vòng lặp `for` từ `i` bằng 0 đến độ dài của danh sách `A` trừ 1.
+4. Trong vòng lặp, kiểm tra điều kiện: nếu không có phần tử nào trong danh sách con `A[i]` khác với phần tử đầu tiên của nó.
+5. Nếu điều kiện trên đúng, trả về giá trị `False` và kết thúc hàm.
+6. Tăng giá trị của `i` lên 1 và quay lại bước 4 nếu vẫn còn phần tử trong danh sách `A`.
+7. Nếu đã duyệt qua tất cả các phần tử trong danh sách `A` mà không gặp điều kiện sai, trả về giá trị `True`.
+8. Kết thúc hàm.

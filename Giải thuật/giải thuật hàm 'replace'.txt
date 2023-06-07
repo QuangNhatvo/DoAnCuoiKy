@@ -1,0 +1,11 @@
+giải thuật hàm replace (A,B,C,D,E)
+
+Đầu vào: A,B,C,D,E
+Đầu ra: A
+
+1. Cập nhật danh sách B theo các giá trị con trong danh sách E
+2. Cập nhật danh sách C theo các giá trị con trong danh sách E
+3. Cập nhật danh sách D theo danh sách B và C vừa mới cập nhật
+4. Cập nhật danh sách A theo các danh sách B,C,D,E.
+5. Trả về danh sách h A
+6. Kết thúc hàm
